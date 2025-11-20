@@ -1,0 +1,77 @@
+Day Properties: 19/11/2025 
+-------------------------- 
+CSS:
+---- 
+	use to style an HTML document.
+	describes how HTML elements should be displayed. 
+	
+Selector: 
+--------- 
+	Basic HTML Elements: 
+	
+	Example: 
+	-------- 
+		body {
+			property_name_1: value_1; 
+			property_name_2: value_2; 
+			.
+			.
+			property_name_N: value_N; 
+		} 
+		
+(5 - properties)
+	color, background-color, font-family, font-size, text-align 
+--------------------------------------------------------------- 
+
+Day Properties: 20/11/2025 
+-------------------------- 
+CSS Syntax: 
+----------- 
+	A CSS rule consists of a selector and a declaration block
+	
+	Selector 
+	{							
+		color: blue; 		/* Declaration statement 1 (color - property, blue - value) */
+		font-size: 12px; 	/* Declaration statement 2 */
+	} 
+	
+Example: 
+-------- 
+	p 
+	{
+		color: blue; 
+		font-size: 12px; 
+	} 
+	
+Selector Types: 
+--------------- 
+	1. Simple selectors (select elements based on name, id, class) 
+	2. Combinator selectors (select elements based on a specific relationship between them)
+	3. Pseudo-class selectors (select elements based on a certain state)
+	4. Pseudo-elements selectors (select and style a part of an element)
+	5. Attribute selectors (select elements based on an attribute or attribute value) 
+
+1. Simple Selector: 
+------------------- 
+	Universal Selector (*) - Selects all elements 
+	Element Selector (element_name) - Selects all <p> elements 
+	Class Selector (.class_name) - Selects all elements with match the class name 
+	Specific Class Elements Selector(element_name.class_name). 
+	Grouping Selector - Select all element1, element2, .., elementN. 
+	
+2. Combinator selector: 
+----------------------- 
+		select elements based on a specific relationship between them. 
+		A combinator is a sign that(' ', '>', '+', '~', ',', '|') explains the relationship between selectors. 
+		
+		Types: 
+		------
+			1. Descendant Combinator (' ') -  selects all elements that are descendants (children, grandchildren, etc.) of a specified element.
+			2. Child Combinator ('>') - selects all elements that are direct children of a specified element.
+			3. next Sibling Combinator ('+') - select an element that is directly after a specific element. Sibling elements must have the same parent element.
+			4. Subsequent-sibling combinator ('~') - selects all elements that are next siblings of a specified element. and share the same parent. 
+			5. Selector-list Combinator (',') - select all the matching elements. Separate each element name with a comma. 
+
+(5 - properties)
+	text-decoration, padding, border, border-radius, margin
+------------------------------------------------------------ 

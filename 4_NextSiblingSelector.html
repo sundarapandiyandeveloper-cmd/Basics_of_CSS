@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Next Sibling Combinator</title> 
+		<meta charset='utf-8'> 
+		
+		<style>
+			div + p {
+				background-color: yellow;
+			} 
+			
+			section > div + p {
+				font-size: 1.5em; 
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h2>Next Sibling Combinator (+)</h2>
+
+		<p>The + combinator is used to select an element that is directly after a specific element.</p>
+		<p>The following example selects the first p element that immediately follows a div, and share the same parent:</p>
+
+		<div>
+			<p>Paragraph 1 in the div.</p>
+			<p>Paragraph 2 in the div.</p>
+		</div>
+
+		<p>Paragraph 3. After a div.</p>
+		<p>Paragraph 4. After a div.</p>
+
+		<div>
+			<p>Paragraph 5 in the div.</p>
+			<p>Paragraph 6 in the div.</p>
+		</div>
+
+		<p>Paragraph 7. After a div.</p>
+		<p>Paragraph 8. After a div.</p> 
+		
+		<section> 
+			<div>
+				Sample content inside div inside section
+			</div>
+			
+			<p>Hello World!</p> 
+			
+			<p>This is second sibling of div inside section</p>
+		</section> 
+		<time datetime="2025-11-20 12:10 PM">20 November, 2025</time>
+	</body>
+</html> 

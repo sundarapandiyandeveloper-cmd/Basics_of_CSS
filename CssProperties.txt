@@ -1,0 +1,10 @@
+background-color 
+border 
+border-radius 
+color
+font-family 
+font-size 
+margin 
+padding
+text-align 
+text-decoration - (It is a shorthand property of text-decoration-line, text-decoration-style, text-decoration-color) 

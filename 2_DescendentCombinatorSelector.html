@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<title>Descendant Combinator Selector (space)</title> 
+		<meta charset='utf-8'> 
+		
+		<style>
+			div p 
+			{
+			  background-color: yellow;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h2>Descendant Combinator (space)</h2>
+
+		<p>The descendant combinator (space) matches all elements that are descendants (children, grandchildren, etc.) of a specified element.</p>
+		<p>The following example selects all p elements inside div elements:</p>
+
+		<div>
+			<p>Paragraph 1 in the Div.</p>
+		  
+			<p>Paragraph 2 in the Div.</p>
+		  
+			<section>
+				<p>Paragraph 3 in the Section (inside the Div).</p>
+			</section> 
+			
+			<div>
+				<p>Paragraph inside Div inside Div inside Body</p>
+			</div>
+		</div>
+
+		<p>Paragraph 4. Not in a div.</p>
+		<p>Paragraph 5. Not in a div.</p> 
+		
+		<section> 
+			<div>
+				<div>
+					<p>Paragraph 6</p>
+				</div>
+			</div>
+		</section>
+		<time datetime="2025-11-20 12:10 PM">20 November, 2025</time>
+	</body>
+</html>

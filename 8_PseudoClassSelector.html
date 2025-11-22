@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+
+<html lang="en-US">
+    <head>
+        <title>Pseudo Class Selector</title> 
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="BasicCss/3_PseudoClass.css"> 
+    </head> 
+
+    <body>
+        <!-- Horizontal Navbar -->
+        <nav>
+            <ul id="horizontalNav">
+                <h2>PseudoClass</h2>
+                <li><a href="1_CSS_1_5.html">CSS 1-5 Propeties</a></li>
+                <li><a href="1_SimpleSelector.html">Simple Selector</a></li> 
+                <li><a href="6_CSS_6_10.html">CSS 6-10 Properties</a></li>
+                <li><a href="8_PseudoClassSelector.html">Pseudo Class Selector</a></li>
+            </ul>
+        </nav>
+
+        <h1>Pseudo Class Selector</h1>
+
+	    <p>pseudo-class is a keyword that can be added to a selector, to define a style for a special state of an element.</p> 
+
+        <div>Some common use for pseudo-classes 
+            <ol>
+                <li>Style an element when a user moves the mouse over it</li>
+                <li>Style visited and unvisited links differently</li>
+                <li>Style an element when it gets focus</li>
+                <li>Style valid/invalid/required/optional form elements</li>
+                <li>Style an element that is the first child of its parent</li> 
+            </ol>
+        </div>
+
+        <section>
+            <h2>Syntax</h2>
+
+            <p>Pseudo-classes are always denoted by a single colon (:) followed by the pseudo-class name</p> 
+
+<pre>selector:pseudo-class-name 
+{
+    CSS properties
+}</pre> 
+        </section> 
+
+        <h2>HTML Form</h2>
+        <form action="" method="POST">
+            <label>User Name : </label>
+            <input type="text" name="u_name" placeholder="User Name"> <br> <br>
+
+            <label>User Email: </label>
+            <input type="email" name="u_email" placeholder="User Email"> <br> <br>
+
+            <input type="submit" value="submit">
+        </form>
+
+        <h2>Simple Tooltip Hover</h2> 
+        <div id="tooltip">hover to show the content of paragraph element 
+            <p id="hidden">Hi, I'm here.</p>
+        </div>
+        <time datetime="2025-11-22 02:08 pm">November 22, 2025</time>
+    </body>
+</html>

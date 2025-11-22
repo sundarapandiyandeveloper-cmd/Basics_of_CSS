@@ -1,10 +1,20 @@
 background-color 
 border 
 border-radius 
-color
+color 
+cursor 
+display 
 font-family 
 font-size 
+height 
+letter-spacing - Adjusts the space between letters.
+line-height - Controls the space between lines of text.
 margin 
+opacity 
+overflow - Handles content that is too big for its container. ([default]visible, hidden, scroll, auto)
 padding
 text-align 
 text-decoration - (It is a shorthand property of text-decoration-line, text-decoration-style, text-decoration-color) 
+text-transform - Changes the capitalization of text. ([default]none, uppercase, lowercase, capitalize)
+visibility - Controls whether an element is visible or hidden. ([default]visible, hidden)
+width 

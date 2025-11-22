@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+
+<html lang="en-US"> 
+    <head>
+        <title>CSS Properties 16-20</title> 
+        <meta charset="UTF-8"> 
+        
+        <style>
+            #styledPara 
+            {
+                line-height: 1.5em; 
+                letter-spacing: 2px;
+            }
+
+            #idVisibility:hover 
+            {
+                visibility: hidden;
+            }
+        </style>
+    </head> 
+
+    <body>
+        <h1>CSS Properties 16 to 20</h1> 
+
+        <section>
+            <ol>
+                <li style="text-transform: none;">line-height - Controls the space between lines of text</li>
+                <li style="text-transform: lowercase;">letter-spacing - Adjusts the space between letters</li>
+                <li style="text-transform: uppercase;">text-transform - Changes the capitalization of text</li>
+                <li style="text-transform: capitalize;">visibility - Controls whether an element is visible or hidden</li>
+                <li>overflow - Handles content that is too big for its container</li>
+            </ol>
+        </section> <hr>
+
+        <h2>default paragraph</h2>
+        <p style="width: 300px;">
+            The line-height property in CSS controls the vertical space between lines of text. 
+            It affects how “tall” each line of text appears within a block. 
+            Essentially, it determines the distance from the baseline of one line of text to the baseline of the next line.
+        </p> 
+
+        <h2>Styled paragraph</h2> 
+        <p id="styledPara"style="width: 300px;">
+            The line-height property in CSS controls the vertical space between lines of text. 
+            It affects <span id="idVisibility">how “tall” each line of text appears within a block.</span> 
+            Essentially, it determines the distance from the baseline of one line of text to the baseline of the next line.
+        </p> <hr>
+        
+        <section style="width: 250px; height: 175px; border: 2px solid red;">
+            <h2>Overflow Default (Visible)</h2>
+            <p>
+                A little mouse was a great cook. 
+                He ate some beans but kept twitching his ear. 
+                "Why are you twitching your ear?" asked the parrot. 
+                The mouse laughed and said, "I'm showing my ear like I'm listening to the queen's story!" 
+                The parrot started hopping too, and they both tumbled over laughing.
+            </p>
+        </section> <br> <br> <br> <br> <br>
+
+        <section style="width: 250px; height: 175px; border: 2px solid red; overflow: hidden;">
+            <h2>Overflow Hidden</h2>
+            <p>
+                A little mouse was a great cook. 
+                He ate some beans but kept twitching his ear. 
+                "Why are you twitching your ear?" asked the parrot. 
+                The mouse laughed and said, "I'm showing my ear like I'm listening to the queen's story!" 
+                The parrot started hopping too, and they both tumbled over laughing.
+            </p>
+        </section> <br> <br>
+
+        <section style="width: 250px; height: 175px; border: 2px solid red; overflow: scroll;">
+            <h2>Overflow Scroll 1</h2>
+            <p>
+                A little mouse was a great cook. 
+                He ate some beans but kept twitching his ear. 
+                "Why are you twitching your ear?" asked the parrot. 
+                The mouse laughed and said, "I'm showing my ear like I'm listening to the queen's story!" 
+                The parrot started hopping too, and they both tumbled over laughing.
+            </p>
+        </section> <br> <br>
+
+        <section style="width: 250px; height: 175px; border: 2px solid red; overflow: scroll;">
+            <h2>Overflow Scroll 2</h2>
+            <p>
+                A little mouse was a great cook. 
+                He ate some beans but kept twitching his ear. 
+            </p>
+        </section> <br> <br> 
+
+        <section style="width: 250px; height: 175px; border: 2px solid red; overflow: auto;">
+            <h2>Overflow Auto 1</h2>
+            <p>
+                A little mouse was a great cook. 
+                He ate some beans but kept twitching his ear. 
+                "Why are you twitching your ear?" asked the parrot. 
+                The mouse laughed and said, "I'm showing my ear like I'm listening to the queen's story!" 
+                The parrot started hopping too, and they both tumbled over laughing.
+            </p>
+        </section> <br> <br>
+
+        <section style="width: 250px; height: 175px; border: 2px solid red; overflow: auto;">
+            <h2>Overflow Auto 2</h2>
+            <p>
+                A little mouse was a great cook. 
+                He ate some beans but kept twitching his ear. 
+            </p>
+        </section> 
+    </body>
+</html>

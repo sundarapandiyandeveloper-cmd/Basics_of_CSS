@@ -1,0 +1,66 @@
+* 
+{
+    background-color: rgb(155, 155, 155); 
+}
+
+body 
+{
+    margin-left: 130px;
+    margin-right: 130px; 
+}
+
+#horizontalNav > li > a:link, 
+#horizontalNav > li > a:visited  
+{
+    color: rgb(240, 240, 240); 
+    font-family: verdana; 
+    text-decoration: none;
+} 
+
+#horizontalNav > li > a:hover, 
+#horizontalNav > li > a:active 
+{
+    color: orange; 
+} 
+
+#horizontalNav > li 
+{
+    list-style-type: none; 
+    padding-top: 8px; 
+}
+
+#horizontalNav > h2 
+{
+    margin: 0px; 
+    display: inline; 
+    color: white; 
+    font-family: verdana; 
+    margin-right: auto; 
+}
+
+#horizontalNav 
+{
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    padding: 0px; 
+    column-gap: 25px; 
+} 
+
+input:focus 
+{
+    color: greenyellow; 
+    background-color: black;
+}
+
+#hidden 
+{
+    display: none; 
+    color: white; 
+    background-color: violet; 
+} 
+
+#tooltip:hover p 
+{
+    display: block; 
+}

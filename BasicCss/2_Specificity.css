@@ -1,0 +1,34 @@
+#SeoHead 
+{
+    color: blue;
+}
+
+.mainHead 
+{
+    color: green;
+}
+
+h1 
+{
+    color: red;
+}
+
+* 
+{
+    color: white;  
+    background-color: rgb(215, 215, 215);
+} 
+
+.impt 
+{
+    color: brown !important;
+
+    /* NOTE: 
+        Any low specifity + !important = final style applied to the important style. 
+        Inline CSS + !imporant Vs Any specificity + !important = Inline CSS style applied to the element. */
+}
+
+.fontimpt 
+{
+    font-size: 1.5em !important;
+}

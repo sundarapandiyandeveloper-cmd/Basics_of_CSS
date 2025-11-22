@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+
+<html lang="en-US">
+    <head>
+        <title>CSS Specificity</title> 
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" href="BasicCss/2_Specificity.css"> 
+        <style>
+            h1 {
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="mainHead impt" id="SeoHead" style="color:blueviolet">CSS Specificity</h1> 
+
+        <p>
+            CSS Specificity number scoring system <br>
+            that helps more than one style rule focus on same element <br>
+            which specific style rule will be applied on the element based on the specificity value with !important
+        </p> 
+
+        <ul class="fontimpt" style="font-size: 1.2em !important;">
+            <li>Inline CSS - 1, 0, 0, 0</li> 
+            <li>Id - 0, 1, 0, 0</li> 
+            <li>class, pseudo class, attrubute - 0, 0, 1, 0</li> 
+            <li>element, pseudo element - 0, 0, 0, 1</li> 
+            <li>* universal - 0, 0, 0, 0</li>
+        </ul> 
+
+        <time datetime="2025/11/22 11:03 am">November 22, 2025</time>
+    </body>
+</html>

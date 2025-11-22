@@ -12,7 +12,8 @@ line-height - Controls the space between lines of text.
 margin 
 opacity 
 overflow - Handles content that is too big for its container. ([default]visible, hidden, scroll, auto)
-padding
+padding 
+position 
 text-align 
 text-decoration - (It is a shorthand property of text-decoration-line, text-decoration-style, text-decoration-color) 
 text-transform - Changes the capitalization of text. ([default]none, uppercase, lowercase, capitalize)

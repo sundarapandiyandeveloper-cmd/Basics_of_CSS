@@ -100,6 +100,37 @@ Syntax:
 		CSS properties
 	} 
 
+CSS Position: 
+	position - ([default]static, relative, absolute, fixed). 
+
+1. position: static (default)
+	Every element is static unless you change it.
+	The element follows normal document flow.
+	Top/left/right/bottom have no effect. 
+
+2. position: relative
+	Still stays in normal document flow.
+	BUT you can move it relative to its original position using top / left / right / bottom.
+	It also becomes the positioning reference for absolutely positioned children.
+
+3. position: absolute
+	Removed from the normal flow.
+	Positioned relative to the first ancestor that has position: relative, absolute, or fixed.
+	If none exist, it positions relative to the viewport.
+
+4. position: fixed
+	Stays fixed to the viewport, even during scroll.
+	Removed from normal flow.
+	Always stays at the same place on the screen. 
+
+| Position     | In Flow? | Moves With Scroll? | Positioned Relative To      |
+| ------------ | -------- | ------------------ | --------------------------- |
+|   static     | ✔ yes    | ✔ yes             | normal flow                 |
+|   relative   | ✔ yes    | ✔ yes             | its original position       |
+|   absolute   | ❌ no    | ✔ yes             | nearest positioned ancestor |
+|   fixed      | ❌ no    | ❌ no             | viewport                    |
+
+
 (5 - properties)
 	width, height, opacity, display, cursor
 -------------------------------------------

@@ -1,0 +1,55 @@
+ p 
+ {
+    font-size: 1.5em; 
+    line-height: 30px;
+} 
+
+#fixedPosition 
+{
+    font-size: 3em; 
+    font-weight: bold; 
+    color: white; 
+    background-color: blue;
+    width: fit-content; 
+    padding: 0px 15px; 
+    border-radius: 50%; 
+
+    position: fixed; 
+    top: 20px; 
+    left: 1350px; 
+} 
+
+#relativePosition 
+{
+    position: relative; 
+    top: 10px; 
+    left: 10px; 
+} 
+
+#absolutePosition 
+{
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+} 
+
+#parent 
+{
+    position: relative; 
+}
+
+#absPoswithParent 
+{
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+} 
+
+/* By default element position static & it can't be moved.
+#staticPosition 
+{
+    position: static;   
+    top: 100px; 
+    left: 100px; 
+} 
+*/ 

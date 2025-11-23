@@ -1,0 +1,25 @@
+#para 
+{
+    text-indent: 25px; 
+    word-spacing: 15px;
+} 
+
+p.test 
+{
+    white-space: nowrap;
+} 
+
+#shadow 
+{
+    text-shadow: 1px 1px; 
+} 
+
+#colorShadow 
+{
+    text-shadow: 1px 1px red;
+} 
+
+#blurColorShadow 
+{
+    text-shadow: 1px 1px 2px red; /* 1px 1px for horizontal and vertical shadow, 2px for blur shadow, color. */
+} 

@@ -1,21 +1,37 @@
+background-attachment 
 background-color 
+background-image 
+background-position 
+background-repeat 
+background-size - Controls how a background image is scaled inside its container.
 border 
 border-radius 
 color 
 cursor 
+direction
 display 
 font-family 
 font-size 
+font-style - (Values: normal/italic/oblique) 
+font-variant 
+font-weight - specifies how thick or thin characters in text should be displayed.
 height 
 letter-spacing - Adjusts the space between letters.
 line-height - Controls the space between lines of text.
 margin 
 opacity 
+outline - (short hapnd property of outline-style, outline-width, outline-color). 
+outline-offset
 overflow - Handles content that is too big for its container. ([default]visible, hidden, scroll, auto)
 padding 
 position 
 text-align 
-text-decoration - (It is a shorthand property of text-decoration-line, text-decoration-style, text-decoration-color) 
-text-transform - Changes the capitalization of text. ([default]none, uppercase, lowercase, capitalize)
-visibility - Controls whether an element is visible or hidden. ([default]visible, hidden)
+text-align-last - specifies how to align the last line of a text.
+text-decoration - (It is a shorthand property of text-decoration-line, text-decoration-style, text-decoration-color, text-decoration-thickness) 
+text-indent -  specify the indentation of the first line in a text-block. 
+text-transform - Changes the capitalization of text. ([default]none, uppercase, lowercase, capitalize) 
+vertical-align 
+visibility - Controls whether an element is visible or hidden. ([default]visible, hidden) 
+white-space - specifies how white-space inside an element is handled. 
 width 
+word-spacing - specify the space between the words in a text. 

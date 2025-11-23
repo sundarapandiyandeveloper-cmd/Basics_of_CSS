@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+
+<html lang="en-US"> 
+    <head>
+        <title>Margin Collapse</title> 
+        <meta charset="UTF-8"> 
+
+        <style>
+            #Container 
+            {
+                /* box model */ 
+                width: 300px; 
+                height: 100px; 
+                padding: 5px;
+                border: 2px solid red; 
+                margin: 5px;
+
+                /* Outline Property */  
+                outline-style: solid; 
+                outline-width: medium; 
+                outline-color: blue; 
+                outline-offset: 2px;
+            }
+        </style>
+    </head> 
+
+    <body>
+        <h1>Margin Collapse - h1's margin-bottom: 21.440</h1> 
+        <p>
+            Margin collapse is when two margins collapse into a single margin. <br> 
+            Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins. <br> 
+            Note: Margin collapse only happens with top and bottom margins! Not left and right margins! <br> 
+            - p's margin-top: 16
+        </p> 
+        <div>h1's margin-bottom & p's margin-top is collapsed</div> 
+
+        <hr>
+
+        <h2>Box Model</h2>
+
+        <div id="Container">
+            Aira wandered into the forgotten forest as the sun dipped behind the hills, 
+            carrying only a flickering lantern and a map drawn by her grandfather. 
+        </div>
+
+        <time datetime="2025/11/23 5:15 pm">November 23, 2025</time>
+    </body>
+</html>

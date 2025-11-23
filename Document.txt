@@ -138,3 +138,41 @@ CSS Position:
 (5 - properties)
 	line-height, letter-spacing, text-transform, visibility, overflow
 --------------------------------------------------------------------- 
+
+Day Properties: 23/11/2025 
+-------------------------- 
+
+Outline in CSS: 
+--------------- 
+	outline-style - Set the style of an outline 
+	outline-width - Set the width of an outline 
+	outline-color - Set the color of an outline 
+	outline - A shorthand property for setting outline-width, outline-style, and outline-color in one declaration 
+	outline-offset - Specifies the space between an outline and the edge or border of an element 
+
+Text Formatting 
+--------------- 
+	vertical-align 
+	--------------
+		used to control the vertical positioning of an inline or inline-block element relative to its line box or 
+		table-cell container. It does not work on block-level elements by default. 
+
+Text Shadow 
+----------- 
+	text-shadow 
+	----------- 
+		adds shadow to text. In its simplest use, you only specify the horizontal and the vertical shadow. 
+		In addition, you can add a shadow color and blur effect. 
+
+		The text-shadow property also accepts multiple shadows for an element. Define each shadow in a comma-separated list.
+		Example: text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff; 
+
+font-weight: 
+------------ 
+	normal - This is default. Defines normal characters
+	bold - Defines thick characters
+	bolder - Defines thicker characters
+	lighter - Defines lighter characters
+	100-900 - Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold 
+
+------------------------------------------------------------------------------------------------------------

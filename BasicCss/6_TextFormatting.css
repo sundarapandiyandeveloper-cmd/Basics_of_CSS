@@ -1,0 +1,47 @@
+#block1 
+{
+    text-align-last: right;
+} 
+
+#block2 
+{
+    text-align-last: center;
+}
+
+#block3 
+{
+    text-align-last: justify; 
+}
+
+img.a 
+{
+    vertical-align: baseline;
+} 
+
+img.b 
+{
+    vertical-align: text-top;
+} 
+
+img.c 
+{
+    vertical-align: text-bottom;
+} 
+
+img.d 
+{
+    vertical-align: sub;
+} 
+
+img.e 
+{
+    vertical-align: super;
+} 
+
+#dir 
+{
+    direction: rtl;  
+    unicode-bidi: bidi-override;
+
+    text-decoration: 5px underline double red; /* 5px text-decoration-thickness */
+}

@@ -175,4 +175,34 @@ font-weight:
 	lighter - Defines lighter characters
 	100-900 - Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold 
 
-------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------ 
+
+Day Properties: 24/11/2025 
+-------------------------- 
+Icons
+----- 
+	Icons can easily be added to your HTML page, by using an icon library.
+
+How To Add Icons 
+---------------- 
+	The simplest way to add an icon to your HTML page, is with an icon library, such as CSS Bootstrap library. 
+	Add the name of the specified icon class to any inline HTML element (like <i> or <span>). 
+	Icons can be customized with CSS (size, color, shadow, etc.) 
+
+Bootstrap Icons
+--------------- 
+	To use the Bootstrap glyphicons, add the following line inside the <head> section of your HTML page 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+	Example: 
+	-------- 
+		<i class="glyphicon glyphicon-cloud"></i>
+		<i class="glyphicon glyphicon-remove"></i>
+
+CSS list
+-------- 
+	list-style-type - Specifies the type of list-item marker (ul[{default value}disc, circle, square, none] - ol[{default value}decimal, lower-alpha, upper-alpha, lower-roman, upper-roman]) 
+	list-style-image - Specifies an image as the list-item marker
+	list-style-position - Specifies the position of the list-item markers
+	list-style - A shorthand property for the properties above 
+

@@ -1,0 +1,15 @@
+#unorderedList 
+{
+    list-style-type: square; /* (default value)disc, circle, square, none */
+} 
+
+#orderedList 
+{
+    list-style-type: decimal; /* (default value)decimal, lower-alpha, upper-alpha, lower-roman, upper-roman */
+}
+
+#ulImageStyle 
+{
+    list-style-image: url('Images/2_SquareVerticalAlignTest.png'); 
+    list-style-type: circle; 
+}

@@ -18,6 +18,7 @@ font-weight - specifies how thick or thin characters in text should be displayed
 height 
 letter-spacing - Adjusts the space between letters.
 line-height - Controls the space between lines of text.
+list-style - short hand declaration of list-style-type, list-style-position, list-item-marker 
 margin 
 opacity 
 outline - (short hapnd property of outline-style, outline-width, outline-color). 

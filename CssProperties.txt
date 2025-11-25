@@ -5,7 +5,12 @@ background-position
 background-repeat 
 background-size - Controls how a background image is scaled inside its container.
 border 
+border-collapse 
+border-spacing 
 border-radius 
+bottom  
+caption-side  
+clear 
 color 
 cursor 
 direction
@@ -14,25 +19,32 @@ font-family
 font-size 
 font-style - (Values: normal/italic/oblique) 
 font-variant 
-font-weight - specifies how thick or thin characters in text should be displayed.
+font-weight - specifies how thick or thin characters in text should be displayed. 
+float 
 height 
+left
 letter-spacing - Adjusts the space between letters.
 line-height - Controls the space between lines of text.
 list-style - short hand declaration of list-style-type, list-style-position, list-item-marker 
 margin 
+max-width 
+min-width  
 opacity 
 outline - (short hapnd property of outline-style, outline-width, outline-color). 
 outline-offset
 overflow - Handles content that is too big for its container. ([default]visible, hidden, scroll, auto)
 padding 
 position 
+right  
 text-align 
 text-align-last - specifies how to align the last line of a text.
 text-decoration - (It is a shorthand property of text-decoration-line, text-decoration-style, text-decoration-color, text-decoration-thickness) 
 text-indent -  specify the indentation of the first line in a text-block. 
 text-transform - Changes the capitalization of text. ([default]none, uppercase, lowercase, capitalize) 
-vertical-align 
+top
+vertical-align - (image, table, inline-block, table-cell element)
 visibility - Controls whether an element is visible or hidden. ([default]visible, hidden) 
 white-space - specifies how white-space inside an element is handled. 
 width 
 word-spacing - specify the space between the words in a text. 
+z-index 

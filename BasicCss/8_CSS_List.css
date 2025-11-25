@@ -10,6 +10,11 @@
 
 #ulImageStyle 
 {
-    list-style-image: url('Images/2_SquareVerticalAlignTest.png'); 
+    list-style-image: url('../Images/3_SquarePurple.gif'); 
     list-style-type: circle; 
+} 
+
+#shorthand 
+{
+    list-style: square inside url('../Images/2_SquareVerticalAlignTest.png'); /* list-style-type, list-style-position, list-style-image */ 
 }

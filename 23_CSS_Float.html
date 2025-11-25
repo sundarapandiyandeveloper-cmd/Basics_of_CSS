@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float Property</title> 
+    <style>
+        img {
+            float: right;
+        } 
+
+        .section {
+            float: left; 
+            padding: 5px; 
+            color: white;
+        } 
+
+        .block1 {
+            background-color: red; 
+        } 
+
+        .block2 {
+            background-color: green;
+        } 
+
+        .block3 {
+            background-color: blue; 
+        } 
+
+        h2 {
+            clear: left;
+        }
+    </style> 
+</head>
+<body>
+    <h1>CSS Float Left Property</h1> 
+    <p>
+        <img src="Images/4_rose_leaf.png">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+
+    <h2>CSS Float Property On Block Element</h2> 
+    <p>
+        HTML div elements are block elements, and will start on a new line and take up the full width available. 
+        However, if we use float: left we can make the div elements to float next to each other
+    </p> 
+
+    <div class="block1 section">Block1</div> 
+    <div class="block2 section">Block2</div> 
+    <div class="block3 section">Block3</div> 
+
+    <h2>CSS clear property</h2>
+    <div>
+        The clear property specifies what should happen with the element that is NEXT to a floating element. <br>
+        The clear property prevents elements from wrapping around or beside the floated content.
+    </div>
+
+    <div>This is anther div block</div> 
+
+    <time datetime="2025/11/25 12:05 pm">November 25, 2025</time>
+</body>
+</html>

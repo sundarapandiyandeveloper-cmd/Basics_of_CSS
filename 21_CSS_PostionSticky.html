@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Sticky</title>
+    <style>
+        .improvedPara 
+        {
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 1.2em; 
+            letter-spacing: 3px; 
+            word-spacing: 10px; 
+            line-height: 50px; 
+            text-indent: 25px;
+        }
+
+        .common 
+        {
+            color: black; 
+            background-color: rgb(225, 255, 225); 
+            padding: 10px; 
+            border: 2px solid green; 
+            font-weight: 900;
+        }
+
+        span
+        {            
+            position: sticky; 
+            top: 25px;
+        }
+
+        div 
+        {
+            position: fixed; 
+            bottom: 10px; 
+            right: 10px;
+        } 
+
+        #parentDiv 
+        {
+            width: 200px; 
+            height: 300px; 
+            overflow: auto; 
+            padding: 5px; 
+            border: 1px solid green; 
+            margin: 5px; 
+            
+            position: relative;
+        }
+
+        #childDiv 
+        {
+            background-color: rgb(225, 255, 225); 
+            font-weight: 900; 
+            padding: 5px; 
+            border: 2px solid green; 
+            
+            position: sticky; 
+            top: 0px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Position Sticky</h1> 
+    <p class="improvedPara">
+        Dawn crept over the valley with soft golden fingers as the village of Elmsford stirred beneath its warm glow A young boy named Arin opened his sleepy eyes excited because today was the day his grandfather had promised to reveal a great secret one that had been kept for generations 
+        <br>
+        <span class="common">position: sticky;</span>
+        <br>
+        Arin rushed outside the air smelling of dew and distant pine while birds chattered from the treetops like eager storytellers He found his grandfather sitting by the ancient oak whose twisted branches seemed to hold a thousand untold stories Sit down Arin his grandfather said warmly It is time you learned the truth Arins heart pounded as the old man explained that their family was not ordinary they were guardians of a hidden realm called Lumerion a world woven from pure imagination and accessible only to those with a clear heart Arin felt a strange familiarity with the name as though he had whispered it in another life His grandfather produced a crystal pendant that shimmered like a captured sunrise telling Arin it had been his even before he was born When Arin touched it the world around him began to shimmer as colors deepened and the air hummed with music The oak tree glowed with silver veins as his grandfather whispered You are crossing into Lumerion A soft light enveloped Arin until he landed on glowing grass in a world of crystal trees swirling skies and rivers like starlight Creatures danced through the air as the realm responded to Arins imagination flowers opened at his steps and breezes whispered his name But a shadow suddenly swept across the sky and Arin saw a dark shape soaring overhead His grandfathers smile faded as he explained that Lumerion was in danger from a creature called the Vilor a being that fed on fear and forgotten dreams The crystal warmed in Arins hand as his grandfather told him that only someone with true courage could stop the Vilor which hid in the Cave of Echoes Though frightened Arin felt determination blooming within him The path illuminated beneath his feet as tiny glowing creatures cheered him onward As he approached the cave the sky darkened with swirling shadows and a heavy growl echoed from within Arin entered despite his trembling and the Vilor took shape from the darkness its hollow eyes fixed on him He lifted the crystal high as brilliant light burst forth like a rising sun The Vilor shrieked as the warm pure light melted the shadows away When the glow faded the cave stood empty and Lumerion shone brighter than ever Breathless but victorious Arin knew his journey had only just begun
+        <br>
+        Dawn crept over the valley with soft golden fingers as the village of Elmsford stirred beneath its warm glow A young boy named Arin opened his sleepy eyes excited because today was the day his grandfather had promised to reveal a great secret one that had been kept for generations Arin rushed outside the air smelling of dew and distant pine while birds chattered from the treetops like eager storytellers He found his grandfather sitting by the ancient oak whose twisted branches seemed to hold a thousand untold stories Sit down Arin his grandfather said warmly It is time you learned the truth Arins heart pounded as the old man explained that their family was not ordinary they were guardians of a hidden realm called Lumerion a world woven from pure imagination and accessible only to those with a clear heart Arin felt a strange familiarity with the name as though he had whispered it in another life His grandfather produced a crystal pendant that shimmered like a captured sunrise telling Arin it had been his even before he was born When Arin touched it the world around him began to shimmer as colors deepened and the air hummed with music The oak tree glowed with silver veins as his grandfather whispered You are crossing into Lumerion A soft light enveloped Arin until he landed on glowing grass in a world of crystal trees swirling skies and rivers like starlight Creatures danced through the air as the realm responded to Arins imagination flowers opened at his steps and breezes whispered his name But a shadow suddenly swept across the sky and Arin saw a dark shape soaring overhead His grandfathers smile faded as he explained that Lumerion was in danger from a creature called the Vilor a being that fed on fear and forgotten dreams The crystal warmed in Arins hand as his grandfather told him that only someone with true courage could stop the Vilor which hid in the Cave of Echoes Though frightened Arin felt determination blooming within him The path illuminated beneath his feet as tiny glowing creatures cheered him onward As he approached the cave the sky darkened with swirling shadows and a heavy growl echoed from within Arin entered despite his trembling and the Vilor took shape from the darkness its hollow eyes fixed on him He lifted the crystal high as brilliant light burst forth like a rising sun The Vilor shrieked as the warm pure light melted the shadows away When the glow faded the cave stood empty and Lumerion shone brighter than ever Breathless but victorious Arin knew his journey had only just begun
+    </p> 
+
+    <div id="parentDiv">
+        <p>This is a paragraph 1</p> 
+        <p>This is a paragraph 2</p> 
+        <p>This is a paragraph 3</p>  
+        <div id="childDiv">STICKY ONLY INSIDE THE CONTAINER</div>
+        <p>This is a paragraph 4</p> 
+        <p>This is a paragraph 5</p> 
+        <p>This is a paragraph 6</p> 
+        <p>This is a paragraph 7</p> 
+        <p>This is a paragraph 8</p> 
+        <p>This is a paragraph 9</p> 
+        <p>This is a paragraph 10</p> 
+        <p>This is a paragraph 11</p> 
+        <p>This is a paragraph 12</p> 
+    </div>
+
+    <div class="common">position: fixed;<div> 
+
+    <time datetime="2025/11/24 3:18 pm">November 24, 2025</time>
+</body>
+</html>

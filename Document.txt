@@ -206,3 +206,80 @@ CSS list
 	list-style-position - Specifies the position of the list-item markers
 	list-style - A shorthand property for the properties above 
 
+CSS Table 
+--------- 
+	border-collapse - used in table element.possible values are (default value)separate, collapse.  
+	border-spacing - sets the distance between the borders of adjacent cells. Note: This property works only when border-collapse is set to "separate".
+	vertical-align - sets the vertical alignment (like top, bottom, or middle) of the content in <th> or <td>. Note: By default, the vertical alignment of the content in a table is middle (for both <th> and <td> elements). 
+
+Width - Properties 
+------------------ 
+
+width 
+----- 
+	Sets the actual width of an element.
+	Can be a fixed value (200px), percentage (50%), or auto. 
+
+	Example: 
+		div 
+		{
+			width: 300px;
+		}
+
+	The element will be exactly 300px wide, unless min-width or max-width override it. 
+
+max-width 
+--------- 
+	Sets the largest width an element is allowed to grow to.
+	Even if the parent container is very wide, the element will not exceed this value. 
+
+	Example: 
+	div 
+	{
+		max-width: 500px;
+	}
+
+	The element will never be wider than 500px. 
+
+min-width 
+--------- 
+	Sets the smallest width an element is allowed to shrink to. 
+	Even if content is small or the screen is narrow, the width cannot go below this value. 
+
+	Example: 
+	div 
+	{
+		min-width: 200px;
+	} 
+
+	The element will never be smaller than 200px, even if width is smaller. 
+------------------------------------------------------------------------------ 
+
+Day Properties: 25/11/2025 
+-------------------------- 
+float
+----- 
+	specifies how an element should float within its container. 
+	It places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
+	It is used for positioning and formatting content e.g. let an image float left to the text in a container. 
+	It is often used to wrap text around images! 
+
+	Possible Values: 
+	---------------- 
+		left - The element floats to the left of its container 
+		right - The element floats to the right of its container 
+		none - Default. The element does not float and is displayed just where it occurs in the text 
+		inherit - The element inherits the float value of its parent 
+
+clear 
+----- 
+	The clear property specifies what should happen with the element that is NEXT to a floating element.
+	The clear property prevents elements from wrapping around or beside the floated content. 
+
+	Possible Values: 
+	---------------- 
+		none - Default. Allows elements to float on either side
+		left - The element is pushed below floated elements on its left side
+		right - The element is pushed below floated elements, on its right side
+		both - The element is pushed below floated elements, on both its left and right side
+		inherit - The element inherits the clear value from its parent

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z-Index</title> 
+    <link rel="stylesheet" href="BasicCss/10_Z_Index.css">
+</head>
+<body>
+    <h1>CSS z-index</h1> 
+    <p>
+        specifies the stack order of positioned elements. <br>
+        The stack order defines which element should be placed in front or behind other elements. <br> 
+        When elements are positioned, they can overlap other elements. <br> 
+        An element can have a positive or negative stack order (z-index) <br> 
+        Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).
+    </p> 
+    <img src="Images/4_rose_leaf.png"> 
+
+    <h2>A postioned element with a greater stack order is always above an element with a lower stack order.</h2>
+    <div class="container">
+        <div class="child1">Child 1 = z-index 2</div>
+        <div class="child2">child 2 = z-index 3</div>
+        <div class="child3">child 3 = z-index 1</div>
+    </div> 
+
+    <time datetime="2025/11/24 9:30 pm">November 24, 2025</time>
+</body>
+</html>

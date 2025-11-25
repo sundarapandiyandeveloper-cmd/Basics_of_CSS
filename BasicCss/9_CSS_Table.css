@@ -1,0 +1,55 @@
+th, td 
+{
+    border: 1px solid black; 
+    padding: 15px;
+}
+
+table 
+{
+    border-collapse: collapse; /* (default value)separate, collapse */
+    width: 100%;
+} 
+
+th
+{
+    font-weight: bold;
+    color: white; 
+    text-align: left; 
+    background-color: rgb(0, 150, 0);
+    font-size: 1.2em;
+} 
+
+tr:nth-child(even) 
+{
+    background-color: rgb(245, 245, 245);
+}
+
+tr:hover 
+{
+    background-color: rgb(225, 225, 225);
+} 
+
+td 
+{
+    font-size: 1.2em;
+}
+
+/* Style for Table 2 */ 
+.table2 
+{
+    border: 1px solid black;
+    border-collapse: separate; 
+    border-spacing: 20px;
+} 
+
+.table2 th, .table2 td 
+{
+    height: 50px; 
+    text-align: center;
+    vertical-align: top;
+}
+
+.table2 caption 
+{
+    caption-side: bottom;
+}

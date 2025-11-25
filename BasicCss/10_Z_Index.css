@@ -1,0 +1,63 @@
+img 
+{
+    position: absolute; 
+    top: 20px; 
+    right: 200px; 
+    z-index: -1;
+} 
+
+.container 
+{
+    position: relative; 
+    width: 500px;
+    height: 300px; 
+    border: 3px dotted orange;
+} 
+
+.child1, .child2, .child3 
+{
+    opacity: 0.75;
+    color: white; 
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.child1 
+{
+    width: 200px;
+    height: 200px;
+    background-color: blue; 
+
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+
+    z-index: 2;
+} 
+
+.child2 
+{
+    width: 500px;
+    height: 100px; 
+    background-color: green;
+    
+    position: absolute; 
+    top: 50px;
+    right: 10px;
+
+    z-index: 3;
+
+}
+
+.child3 
+{
+    width: 150px;
+    height: 250px; 
+    background-color: rgb(205, 205, 205); 
+
+    position: absolute; 
+    bottom: 25px;
+    right: 175px; 
+
+    z-index: 1;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Image</title> 
+    <style>
+        .dropdown {
+            position: relative; 
+        }
+
+        .content {
+            position: absolute; 
+            display: none;
+        } 
+
+        .dropdown > img:hover + .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <img src="Images/4_rose_leaf.png" width="50px" height="125px"> 
+
+        <div class="content"> 
+            <h2>Rose Leaf Tree</h2>
+            <img src="Images/4_rose_leaf.png">
+        </div>
+    </div> 
+    <time>November 26, 2025</time>
+</body>
+</html>

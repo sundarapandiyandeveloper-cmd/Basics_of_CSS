@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selector Using |</title> 
+    <style>
+        /* value can be exactly the specific value, or start with the specific value followed by a hyphen (-) */
+        [title|="content"] 
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 title="content">Main Heading</h1> 
+    <p title="content-para">Paragraph Section</p> 
+    <div title="div content-hello">Hello Div Section</div>
+    <time>November 27, 2025</time>
+</body>
+</html>

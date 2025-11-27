@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Menu</title>
+    <style>
+        .dropdown {
+            position: relative; 
+        } 
+
+        .content a {
+            display: block;
+            padding: 5px 10px; 
+            text-decoration: none; 
+            color: black; 
+            background-color: rgb(245, 245, 245); 
+            width: 90px;  
+        }
+
+        .dropdownbtn {
+            color: white;
+            background-color: lightgreen;
+            border: 1px solid rgb(245, 245, 245); 
+            padding: 5px 10px;
+        }
+
+        .content {
+            position: absolute;
+            display: none;
+        } 
+
+        .dropdown:hover .content {
+            display: block; 
+        } 
+
+        .content a:hover {
+            background-color: rgb(200, 200, 200);
+        }
+
+        .dropdown:hover .dropdownbtn {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropdownbtn">Mouse Over Me</button> 
+        <div class="content">
+            <a href="#">Ramu</a> 
+            <a href="#">Somu</a> 
+            <a href="#">Balu</a>
+        </div>
+    </div> 
+    <time>November 26, 2025</time>
+</body>
+</html>

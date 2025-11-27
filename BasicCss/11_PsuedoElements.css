@@ -1,0 +1,31 @@
+.firstLine::first-line {
+    color: red;
+    font-variant: small-caps;
+    font-size: 19px;  
+}
+
+.firstLetter::first-letter {
+    color: rgb(255, 238, 0);
+    font-size: 1.2em; 
+    font-weight: bold;
+} 
+
+.insertBefore::before {
+    content: url("../Images/5_smiley.gif");
+} 
+
+.insertAfter::after {
+    content: url("../Images/3_SquarePurple.gif");
+} 
+
+.listItem > li::marker
+{
+    color: red; 
+}
+
+.selectedText::selection 
+{
+    background-color: black; 
+    color: red;
+}
+

@@ -282,4 +282,230 @@ clear
 		left - The element is pushed below floated elements on its left side
 		right - The element is pushed below floated elements, on its right side
 		both - The element is pushed below floated elements, on both its left and right side
-		inherit - The element inherits the clear value from its parent
+		inherit - The element inherits the clear value from its parent 
+
+CSS Pseudo Elements 
+------------------- 
+	pseudo-element is a keyword that can be added to a selector, to style a specific part of an element. 
+
+Some common use for pseudo-elements
+----------------------------------- 
+	Style the first letter or first line, of an element
+	Insert content before or after an element
+	Style the markers of list items
+	Style the user-selected portion of an element
+	Style the viewbox behind a dialog box 
+
+Syntax 
+------ 
+	Pseudo-elements are denoted by a double colon (::) followed by the pseudo-element name 
+
+	selector::pseudo-element-name 
+	{
+		CSS properties
+	} 
+
+::first-line 
+------------ 
+	Used to add a special style to the first line of a text. 
+	It can only be applied to block-level elements. 
+
+::first-letter 
+-------------- 
+	Used to add a special style to the first letter of a text. 
+	It can only be applied to block-level elements. 
+
+::before 
+-------- 
+	Used to insert some content before the content of a specified element.
+	Use the "content" property to specify the content to insert. 
+
+::after 
+------- 
+	 Used to insert some content after the content of a specified element. 
+	 Use the content property to specify the content to insert.  
+
+Dialog Box 
+---------- 
+	A dialog box is a small window that appears on top of a webpage (or application) 
+	to communicate something to the user or ask for input. 
+	It usually pauses the main content until the user interacts with it.
+
+	In web development, dialog boxes are often used for:
+	---------------------------------------------------- 
+		Confirmations (e.g., “Are you sure you want to delete?”)
+		Forms (login, signup, feedback)
+		Alerts or messages
+		Custom pop-up interfaces 
+
+In simple words
+--------------- 
+	A dialog box = a pop-up window used to interact with the user.
+
+HTML Dialog Box
+--------------- 
+	In HTML, a dialog box is typically created using the <dialog> element.
+
+	Example: 
+	-------- 
+		<dialog id="box">
+			<p>This is a dialog box!</p>
+			<button onclick="box.close()">Close</button>
+		</dialog>
+
+		<button onclick="box.showModal()">Open Dialog</button>
+Types: 
+	Modal = “Stop everything and deal with me first.”
+	Non-modal = “I’m here, but you can keep doing whatever you want.” 
+
+| Feature                 | Modal Dialog                   | Non-Modal Dialog      |
+| ----------------------- | ------------------------------ | --------------------  |
+| Blocks page interaction | ✔ Yes                          | ✖ No                 |
+| User must close it      | ✔ Yes                          | ✖ No                 |
+| Focus trapping          | ✔ Yes                          | ✖ No                 |
+| Use cases               | Confirmations, login, warnings | Tools, notifications  |
+| Open method             | showModal()                    | show()                | 
+
+1. Modal Dialog
+---------------
+	A modal dialog is a dialog window that blocks interaction with the rest of the page until the user closes it. 
+
+Key Characteristics 
+------------------- 
+	The user cannot click, scroll, or interact with anything outside the dialog.
+	Focus (tab navigation) is trapped inside the dialog.
+	Ideal when you need the user’s attention for something important. 
+
+How to open a modal dialog
+-------------------------- 
+	dialog.showModal();
+
+Example of a Modal Dialog
+------------------------- 
+
+<dialog id="modalDialog">
+	<h3>Important Message</h3>
+  	<p>You must confirm this action before proceeding.</p>
+  	<button onclick="modalDialog.close()">OK</button>
+</dialog>
+
+<button onclick="modalDialog.showModal()">Open Modal Dialog</button>
+
+When to use a Modal Dialog
+-------------------------- 
+	Delete confirmation
+	Login popup
+	Critical warnings
+	Required form input
+	Anything where the user must respond before continuing 
+
+Why modal dialogs are important 
+------------------------------- 
+	They prevent accidental clicks outside the popup and improve accessibility by keeping keyboard focus inside the dialog.  
+
+2. Non-Modal Dialog
+------------------- 
+	A non-modal dialog is a popup that does NOT block interaction with the rest of the webpage. 
+
+Key Characteristics
+------------------- 
+	The user can continue interacting with the page behind the dialog.
+	The dialog behaves like a floating window.
+	Focus is not trapped—user can click anywhere.
+
+How to open a non-modal dialog 
+------------------------------ 
+	dialog.show();
+
+Example of a Non-Modal Dialog 
+----------------------------- 
+
+<dialog id="nonModalDialog">
+  	<h3>Notification</h3>
+  	<p>You can still interact with the page behind this dialog.</p>
+	<button onclick="nonModalDialog.close()">Close</button>
+</dialog>
+
+<button onclick="nonModalDialog.show()">Open Non-Modal Dialog</button>
+
+When to use a Non-Modal Dialog
+------------------------------ 
+	Chat windows (floating)
+	Tool panels (like photo editor side windows)
+	Small tips or hints
+	Information popups that don’t require user action 
+
+---------------------------------------------------------------------------------------- 
+
+Day Properties: 26/11/2025 
+-------------------------- 
+
+@media 
+------ 
+
+Meaning of only screen
+---------------------- 
+	screen = apply styles to screens (desktops, laptops, tablets, phones). 
+	only = only = a filter that prevents older browsers from applying the styles. 
+
+Full example:
+------------- 
+	@media only screen and (max-width: 768px) 
+	{
+		/* styles */
+	}
+
+Why do we use only?
+------------------- 
+	In modern browsers, using only is optional. 
+	It mainly existed to prevent old browsers (IE8 and earlier) from misinterpreting the media query. 
+
+
+Without only
+------------  
+	@media screen and (max-width: 768px) { ... }
+
+With only 
+--------- 
+	@media only screen and (max-width: 768px) { ... }
+
+Functionally, they work the same in all current browsers.
+
+What does screen mean?
+---------------------- 
+	It tells the browser:
+		“Apply these styles to screen-based devices” 
+		—not to printers, TVs, projectors, etc. 
+
+Other media types include:
+-------------------------- 
+	| Media Type | Meaning                   |
+	| ---------- | ------------------------- |
+	| `screen`   | Phones, tablets, monitors |
+	| `print`    | Printed/PDF documents     |
+	| `speech`   | Screen readers            |
+
+Summary
+------- 
+	| Part       | Meaning                                   | Usefulness today   |
+	| ---------- | ----------------------------------------- | ------------------ |
+	| screen     | Targets display devices                   | Commonly used      |
+	|   only     | Prevents old browsers from applying rules | Not required today |
+
+Final Answer: 
+------------- 
+	only screen means:
+		“Apply this media query only on screen devices, and ignore it in old browsers.”
+
+Attribute Selector 
+------------------  
+	used to select and style HTML elements with a specific attribute or attribute value, or both. 
+
+[attribute]			Select elements with a specific attribute
+[attribute=value]	Select elements with a specific attribute with an exact value
+[attribute~=value]	Select elements with an attribute value containing a specific word
+[attribute|=value]	Select elements with the specific attribute, whose value can be exactly the specific value, or start with the specific value followed by a hyphen (-)
+[attribute^=value]	Select elements with the specific attribute, whose value starts with a specific value
+[attribute$=value]	Select elements whose attribute value ends with a specific value
+[attribute*=value]	Select elements whose attribute value contains a specific value 
+

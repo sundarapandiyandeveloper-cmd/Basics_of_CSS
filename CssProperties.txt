@@ -12,9 +12,11 @@ bottom
 caption-side  
 clear 
 color 
+content 
 cursor 
 direction
 display 
+filter 
 font-family 
 font-size 
 font-style - (Values: normal/italic/oblique) 

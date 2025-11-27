@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element ::backdrop</title> 
+    <style>
+        dialog::backdrop 
+        {
+            background-color: mediumseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Element Backdrop</h1> 
+    <p>This is a paragraph and included some content ...</p> 
+    
+    <dialog id="modalDialog">
+        <p>The paragraph inside dialog box</p>
+        <button onclick="modalDialog.close()">close</button>
+    </dialog> 
+
+    <button id="show">Show Dialog</button> 
+
+    <script>
+        let btnDialog = document.getElementById('show'); 
+        let showDialog = document.getElementById('modalDialog'); 
+
+        btnDialog.addEventListener('click', () => {
+            showDialog.showModal(); 
+        });
+    </script> 
+    <time>November 25, 2025</time>
+</body>
+</html>

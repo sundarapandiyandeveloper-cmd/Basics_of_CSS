@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Sprite</title>
+    <style>
+        #Home {
+            background-image: url("Images/10_img_navsprites.gif"); 
+            background-position: 0px 0px; 
+            width: 43px; 
+            height: 44px;
+        } 
+
+        #Backward {
+            background-image: url("Images/10_img_navsprites.gif"); 
+            background-position: -45px 0px; 
+            /* width: 100%; */ 
+            width: 43px;  
+            height: 44px;
+            /* background-repeat: no-repeat; */
+        } 
+
+        #Forward {
+            background-image: url("Images/10_img_navsprites.gif"); 
+            background-position: -89px 0px; 
+            width: 43px; 
+            height: 44px;
+        }
+    </style>
+</head>
+<body>
+    <img src="Images/11_img_trans.gif" id="Home"> <br>
+    <img src="Images/11_img_trans.gif" id="Backward"> <br>
+    <img src="Images/11_img_trans.gif" id="Forward"> 
+
+    <time>November 26, 2025</time>
+</body>
+</html>

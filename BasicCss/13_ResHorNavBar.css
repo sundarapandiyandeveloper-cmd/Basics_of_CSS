@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+}
+
+nav ul {
+    margin: 0px; 
+    padding: 0px;
+    list-style-type: none; 
+    background-color: gray; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+} 
+
+li a {
+    text-decoration: none; 
+    color: black; 
+    display: block;
+    padding: 5px 15px;
+}
+
+li a.active {
+    color: white; 
+    background-color: green; 
+}
+
+li a:hover:not(.active) {
+    color: white; 
+    background-color: rgb(75, 75, 75);
+}
+
+li:last-child {
+  margin-left: auto; 
+} 
+
+@media screen and (max-width:350px){
+    nav ul {
+        flex-direction: column; 
+        text-align: center; 
+    } 
+
+    li:last-child {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selector With Value</title> 
+    <style>
+        /* = sign specifies exact value */
+        [title="Paragraph"] {
+            color: blue;
+        }
+
+        /* don't work. only works "Div Block" */
+        [title="Div"] {
+            background-color: rgb(245, 245, 245);
+        }
+    </style>
+</head>
+<body>
+    <h1 title="Heading">Main Heading</h1> 
+    <p title="Paragraph">Paragraph Section</p> 
+    <div title="Div Block">Div Section</div> 
+    <p title="Paragraph">Another Paragraph Section</p>
+    <time>November 27, 2025</time>
+</body>
+</html>

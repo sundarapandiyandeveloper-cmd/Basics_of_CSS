@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inherited Properties</title>
+    <style>
+        p {
+            color: blue; /* Inherited Properties */ 
+            padding: 25px; /* Not Inherited */
+            border: 1px solid red; /* Not Inherited */
+        } 
+
+        /* set border to strong element and inherit the padding value using inherit keyword */ 
+        strong {
+            border: 1px solid green; /* User Need */
+            padding: inherit; /* 25px padding is inherited from parent element. */
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph for <strong>testing inherited properties</strong></p> 
+    <time>November 27, 2025</time>
+</body>
+</html>

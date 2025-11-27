@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selector Using ~</title> 
+    <style>
+        /* Word based selection */
+        [title~="seo"] {
+            color: green;
+        } 
+
+        [title~="element"] 
+        {
+            background-color: yellow;
+        } 
+
+        /* no word "ele", the style can't apply */
+        [title~="ele"] 
+        {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 title="h1 element for seo">Main Heading</h1>
+    <p title="p element for paragraph">Paragraph Section</p> 
+    <div title="div element for block of content">Div Section</div>
+    <time>November 27, 2025</time>
+</body>
+</html>

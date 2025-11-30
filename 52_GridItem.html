@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Items</title>
+    <style>
+        .GridContainer {
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 50px;
+            gap: 5px; 
+            justify-content: start;
+            align-content: start; 
+            
+            padding: 5px;
+            background-color: dodgerblue;
+        }
+
+        .GridContainer > div {
+            padding: 15px 25px;
+            text-align: center; 
+            border: 1px solid black; 
+            background-color: rgb(235, 235, 235); 
+            font-size: 1.3em;
+        }
+
+        .firstBlock {
+            grid-column-start: 1; 
+            grid-column-end: span 3; 
+
+            grid-row-start: 1; 
+            grid-row-end: 3;
+        }
+
+        .secondBlock {
+            grid-row-start: 3; 
+            grid-row-end: 6;
+        }
+
+        .thirdBlock {
+            grid-column-start: 2;
+            grid-column-end: 4; 
+
+            grid-row-start: 3; 
+            grid-row-end: 6;
+        }
+
+        .fourthBlock {
+            grid-column-start: 1;
+            grid-column-end: 4; 
+
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+    </style>
+</head>
+<body>
+    <div class="GridContainer">
+        <div class="firstBlock">Header</div>
+        <div class="secondBlock">Nav</div>
+        <div class="thirdBlock">Main</div>
+        <div class="fourthBlock">Footer</div>
+    </div>
+    <time>November 29, 2025</time>
+</body>
+</html>

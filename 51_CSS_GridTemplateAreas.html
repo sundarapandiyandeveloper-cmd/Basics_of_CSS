@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Areas</title> 
+    <style>
+        .gridContainer {
+            display: grid; 
+            grid-template-areas: 
+                "header header" 
+                "sidebar content" 
+                "footer footer"; 
+            grid-template-columns: 200px 1fr; 
+            grid-template-rows: auto 1fr auto; 
+            gap: 15px; 
+            place-content: start;
+        }
+
+        .header {
+            grid-area: header;
+        } 
+
+        .navigation {
+            grid-area: sidebar;
+        } 
+
+        .content {
+            grid-area: content;
+        } 
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body class="gridContainer">
+    <header class="header">Header</header>
+    <nav class="navigation">Sidebar</nav>
+    <main class="content">Content</main>
+    <footer class="footer">Footer</footer>
+    <time>November 29, 2025</time>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(235, 235, 235); 
+        } 
+
+        .container > div {
+            font-size: 1.5em; 
+            font-weight: 900;
+            padding: 10px 30px;
+        } 
+
+        @media (max-width:600px) 
+        {
+            .container {
+                flex-direction: column;
+            } 
+
+            .container > div {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div> 
+    <time>November 28, 2025</time>
+</body>
+</html>

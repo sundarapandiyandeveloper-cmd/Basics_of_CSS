@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Layout Module</title> 
+    <style>
+        .container {
+            display: flex; 
+            flex-flow: row nowrap; 
+            justify-content: flex-start; 
+            align-items: center;
+
+            height: 25vh; /**/
+            background-color: blue;
+        }
+
+        .container > div {
+            font-size: 1.2em; 
+            padding: 20px; 
+            background-color: rgb(235, 235, 235); 
+            margin: 10px;
+            width: 75px;
+            height: 25px;
+            text-align: center;
+        } 
+
+        .item1 {
+            /* order: 2; */
+        }
+
+        .item2 {
+            /* order: 3; */
+            flex-grow: 5; 
+            flex-shrink: 3;
+        }
+
+        .item3 {
+            /* order: 1;  */   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">item 1</div>
+        <div class="item2">item 2</div> 
+        <div class="item3">item 3</div> 
+        <div style="align-self: flex-end;">item 4</div> 
+        <div>item 5</div>
+        <div style="flex-basis: 250px;">item 6</div> 
+        <div>item 7</div> 
+    </div> 
+    <time>November 28, 2025</time>
+</body>
+</html>
